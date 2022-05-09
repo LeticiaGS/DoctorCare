@@ -1,7 +1,7 @@
 # DoctorCare
 Primeiro NLW do ano onde realizamos uma aplicação landing page, com uma arquitetura visando reaproveitamento de código e um projeto escalável.
 
-## 👾 Tecnologías:
+## 👾 Tecnologias:
 - HTML
 - CSS
 - JavaScript
