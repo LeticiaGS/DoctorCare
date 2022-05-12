@@ -9,6 +9,35 @@ onScroll()
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
+
+  activateMenuAtCurrentSection(home)
+  activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(about)
+  activateMenuAtCurrentSection(contact)
+}
+
+function activateMenuAtCurrentSection(section) {
+  const targetLine = scrollY + innerHeight / 2
+
+  const sectionTop = section.offsetTop 
+  const sectionHeight = section.offsetHeight
+  const sectionEndAt = sectionTop + sectionHeight
+
+  const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
+  //se o sectionEndAt for menor doq a linha do meio, ja passou, por isso negamos para q isso n ocorra
+  const sectionEndPassedTargetLine = sectionEndAt <= targetLine
+
+  //basicamente: se esta entre o fim e o inicio da sessao
+  const sectionBoundaries =
+    sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine
+
+  const sectionId = section.getAttribute('id')
+  const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
+
+  menuElement.classList.remove('active')
+  if (sectionBoundaries) {
+    menuElement.classList.add('active')
+  }
 }
 
 function showBackToTopButtonOnScroll() {
