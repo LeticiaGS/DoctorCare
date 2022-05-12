@@ -1,6 +1,6 @@
 # DoctorCare
 Primeiro NLW do ano onde realizamos uma aplicação landing page, com uma arquitetura visando reaproveitamento de código e um projeto escalável.
-Acesse meu deploy <a href= "https://leticiags.github.io/DoctorCare/" target="_blank">clicando aqui.</a> 😁
+Acesse meu deploy <a target="_blank" href= "https://leticiags.github.io/DoctorCare/">clicando aqui.</a> 😁
 
 ## 👾 Tecnologias:
 - HTML
@@ -8,7 +8,7 @@ Acesse meu deploy <a href= "https://leticiags.github.io/DoctorCare/" target="_bl
 - JavaScript
 
 ## 🎯 Objetivo: 
-Meu objetivo realizando este projeto foi reforçar as tecnologias acima, consolidando minha base com as explicações incríveis do <a href= "https://www.linkedin.com/in/maykbrito/" target="_blank">Mayk Brito</a>, 
+Meu objetivo realizando este projeto foi reforçar as tecnologias acima, consolidando minha base com as explicações incríveis do <a target="_blank" href= "https://www.linkedin.com/in/maykbrito/">Mayk Brito</a>, 
 que trouxe muitas dicas valiosas e com didática impecável.
 
 ## 📱 Mobile Project:
