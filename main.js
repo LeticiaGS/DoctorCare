@@ -12,6 +12,7 @@ function onScroll() {
 
   activateMenuAtCurrentSection(home)
   activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(testimonials)
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
 }
@@ -19,7 +20,7 @@ function onScroll() {
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2
 
-  const sectionTop = section.offsetTop 
+  const sectionTop = section.offsetTop
   const sectionHeight = section.offsetHeight
   const sectionEndAt = sectionTop + sectionHeight
 
@@ -75,6 +76,30 @@ ScrollReveal({
   #services, 
   #services header,
   #services .card,
+  #testimonials,
   #about,
   #about header,
   #about .content`)
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  autoplay: {
+    delay: 5000
+  },
+
+  keyboard: true,
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
+})

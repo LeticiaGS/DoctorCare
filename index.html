@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctorCare</title>
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -78,6 +79,9 @@
             </li>
             <li>
               <a onclick="closeMenu()" href="#about">Sobre</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#testimonials">Depoimentos</a>
             </li>
           </ul>
 
@@ -378,6 +382,70 @@
       </div>
     </section>
 
+    <section id="testimonials">
+      <div class="wrapper">
+        <header>
+          <h4>Depoimentos</h4>
+          <h2>O que os clientes dizem sobre o DoctorCare</h2>
+        </header>
+        <div class="content">
+          <div class="testimonials swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span> Atendimento de qualidade! Todos muito
+                    atenciosos e em prontidão a tirar todas as dúvidas. Doutora Annie deixa o clima bem mais leve mantendo o profissionalismo. Recpção calorosa.
+                    Recomendo demais!
+                  </p>
+                  <cite>
+                    <img
+                      src="/assets/Leticia-Gomes.jpg"
+                      alt="Selfie de uma garota sorrindo com roupa colorida"
+                    />
+                    Leticia Gomes
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span> Tive uma experiência incrível com o
+                    Doutor Rogério que me deu um ótimo atendimento e acompanhou
+                    em todo o processo. Toda a hospitalidade da
+                    DoctorCare me fez sentir mai segurança. Excelentes
+                    profissionais.
+                  </p>
+                  <cite>
+                    <img
+                      src="/assets/Gustavo-Martin.jpg"
+                      alt="Homem de blusa branca e bermuda marrom sorrindo"
+                    />
+                    Gustavo Martin
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span> Ambiente agradável que despensa elogios. De longe um dos melhores consultórios que já passei. Doutor Rodrigo um excelente profissional e trasmite segurança e propriedade nas explicações.
+                  </p>
+                  <cite>
+                    <img
+                      src="/assets/Bruno-Gomes.jpg"
+                      alt="Homem de blusa de frio sorrindo apoiado numa grade"
+                    />
+                    Bruno Gomes
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="about">
       <div class="wrapper">
         <div class="col-a">
@@ -599,10 +667,7 @@
       </svg>
     </a>
   </body>
-  <script
-    src="https://kit.fontawesome.com/c60c2cfb59.js"
-    crossorigin="anonymous"
-  ></script>
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
 </html>

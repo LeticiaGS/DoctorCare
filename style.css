@@ -391,6 +391,69 @@ body.menu-expanded button path {
   margin-block: 1.6rem;
 }
 
+/*=============TESTIMONIALS=============*/
+
+#testimonials {
+  background-color: #fff;
+}
+
+#testimonials header h2 {
+  margin-bottom: 6rem;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+
+  background-color: var(--brand-beige);
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+
+  margin-bottom: 2.4rem;
+  color: var(--second-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 4.8rem serif;
+
+  position: absolute;
+  top: -1rem;
+  left: -2.5rem;
+
+  color: var(--primary-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  color: var(--paragraph);
+}
+
+#testimonials cite img {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: cover;
+  clip-path: circle();
+
+  margin-right: 0.8rem;
+}
+
+/*=============SWIPER=============*/
+
+.swiper-slide {
+  width: auto;
+  padding: 6.4rem 1.6rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
+
 /*=============ABOUT=============*/
 
 #about {
@@ -711,6 +774,16 @@ footer ul li a {
   #services .card {
     width: 30%;
     flex-grow: 1;
+  }
+
+  /*=============TESTIMONIALS=============*/
+  #testimonials h2 {
+    width: 47rem;
+    margin-inline: auto;
+  }
+
+  .swiper {
+    width: 100rem;
   }
 
   /*=============ABOUT=============*/
