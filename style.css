@@ -150,6 +150,7 @@ section .content p {
 }
 
 button.open-menu path[stroke*='#00856F'],
+#contact .form .form-header path,
 #contact ul li path {
   stroke: var(--primary-color);
 }
@@ -473,6 +474,7 @@ body.menu-expanded button path {
 /*=============CONTACT=============*/
 #contact {
   text-align: left;
+  background-color: #fff;
 }
 
 #contact header {
@@ -491,6 +493,83 @@ body.menu-expanded button path {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+#contact .form {
+  background-color: var(--bg-light);
+
+  padding: 4.8rem;
+  margin-top: 4rem;
+
+  border-radius: 1rem;
+}
+
+#contact .form .form-header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  margin-bottom: 3.6rem;
+}
+
+#contact .form .form-header p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+
+  margin-left: 1.6rem;
+}
+
+#contact .form .contents {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .form form label,
+#contact .form form input {
+  display: block;
+}
+
+#contact .form form label {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+
+  color: var(--paragraph);
+
+  margin-bottom: 0.48rem;
+  margin-top: 1.4rem;
+}
+
+#contact .form form input {
+  width: 17rem;
+  height: 4rem;
+
+  background-color: var(--brand-light-2);
+  border: 1px solid var(--paragraph);
+  border-radius: 0.3rem;
+
+  padding: 1rem;
+  outline: none;
+}
+
+#contact .form form input:focus {
+  border: 2px solid var(--primary-color);
+}
+
+#contact .form form .col-a input {
+  margin-right: 2rem;
+}
+
+#contact .form form .col-c input {
+  height: 7rem;
+}
+
+#contact .button {
+  border-radius: 0;
+  margin-bottom: 0;
 }
 
 /*=============FOOTER=============*/
@@ -815,6 +894,19 @@ footer ul li a {
   #contact h2 {
     width: 40.4rem;
     text-align: left;
+  }
+
+  #contact .form {
+    width: 45.5rem;
+    margin-top: 0;
+  }
+
+  #contact .form .contents {
+    flex-direction: row;
+  }
+
+  #contact .form form .col-c input {
+    width: 35.8rem;
   }
 
   /*=============FOOTER=============*/
